@@ -1,23 +1,23 @@
 {
-    // Tema de color del editor.
+    // Tema de color
     "workbench.colorTheme": "Palenight Theme",
 
-    // Tema de iconos para el editor.
+    // Tema de iconos
     "workbench.iconTheme": "material-icon-theme",
 
-    // Ocultar la barra de menús, se puede mostrar con "Alt".
+    // Ocultar la barra de menus (mostrar con "Alt")
     "window.menuBarVisibility": "toggle",
 
-    // Usar una barra de menú personalizada para ahorrar espacio.
+    // barra de menu en custom
     "window.titleBarStyle": "custom",
 
     // Ocultar la barra de estado (barra inferior).
     "workbench.statusBar.visible": false,
 
-    // Mostrar solo el nombre del archivo en el título de la ventana.
+    // Mostrar solo el nombre del archivo
     "window.title": "${activeEditorShort}",
 
-    // Otras configuraciones personalizadas.
+    // Otras 
     "editor.minimap.enabled": false,
     "editor.overviewRulerBorder": false,
     "files.autoSave": "onWindowChange",
