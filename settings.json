@@ -1,0 +1,69 @@
+{
+    // Tema de color del editor.
+    "workbench.colorTheme": "Palenight Theme",
+
+    // Tema de iconos para el editor.
+    "workbench.iconTheme": "material-icon-theme",
+
+    // Ocultar la barra de menús, se puede mostrar con "Alt".
+    "window.menuBarVisibility": "toggle",
+
+    // Usar una barra de menú personalizada para ahorrar espacio.
+    "window.titleBarStyle": "custom",
+
+    // Ocultar la barra de estado (barra inferior).
+    "workbench.statusBar.visible": false,
+
+    // Mostrar solo el nombre del archivo en el título de la ventana.
+    "window.title": "${activeEditorShort}",
+
+    // Otras configuraciones personalizadas.
+    "editor.minimap.enabled": false,
+    "editor.overviewRulerBorder": false,
+    "files.autoSave": "onWindowChange",
+    "editor.fontSize": 14,
+    "debug.onTaskErrors": "debugAnyway",
+    "cmake.useCMakePresets": "always",
+    "terminal.integrated.inheritEnv": false,
+    "cmake.showOptionsMovedNotification": false,
+    "workbench.colorCustomizations": {
+        "[Palenight Theme]": {
+            "editor.background": "#1e1e1e",
+            "editor.foreground": "#d4d4d4"
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "comment",
+                "settings": {
+                    "foreground": "#7f848e"
+                }
+            },
+            {
+                "scope": "keyword",
+                "settings": {
+                    "foreground": "#c792ea"
+                }
+            },
+            {
+                "scope": "variable",
+                "settings": {
+                    "foreground": "#f78c6c"
+                }
+            }
+        ]
+    },
+    "python.dataScience.jupyterServerURI": "local",
+    "python.dataScience.runStartupCommands": [
+        "import matplotlib.pyplot as plt",
+        "plt.style.use('seaborn-darkgrid')"
+    ],
+    "workbench.editorAssociations": {
+        "*.png": "imagePreview.previewEditor",
+        "*.jpg": "imagePreview.previewEditor",
+        "*.jpeg": "imagePreview.previewEditor"
+    },
+    "workbench.preferredHighContrastColorTheme": "Kimbie Dark",
+    "workbench.activityBar.location": "hidden"
+}
