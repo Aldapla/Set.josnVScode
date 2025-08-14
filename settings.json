@@ -1,31 +1,41 @@
 {
-    // Tema de color
     "workbench.colorTheme": "Palenight Theme",
-
-    // Tema de iconos
     "workbench.iconTheme": "material-icon-theme",
-
-    // Ocultar la barra de menus (mostrar con "Alt")
     "window.menuBarVisibility": "toggle",
-
-    // barra de menu en custom
     "window.titleBarStyle": "custom",
-
-    // Ocultar la barra de estado (barra inferior).
-    "workbench.statusBar.visible": false,
-
-    // Mostrar solo el nombre del archivo
     "window.title": "${activeEditorShort}",
 
-    // Otras 
+    // Oculta barra de estado y minimapa
+    "workbench.statusBar.visible": false,
     "editor.minimap.enabled": false,
     "editor.overviewRulerBorder": false,
-    "files.autoSave": "onWindowChange",
-    "editor.fontSize": 14,
-    "debug.onTaskErrors": "debugAnyway",
-    "cmake.useCMakePresets": "always",
+
+    // Oculta la terminal integrada
+    "terminal.integrated.defaultLocation": "editor",
+    "terminal.integrated.showOnStartup": false,
     "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "matlab.interrupt"
+    ],
+
+    // Oculta panel lateral de archivos
+    "workbench.activityBar.location": "hidden",
+    "workbench.sideBar.location": "left", 
+    "workbench.startupEditor": "none",
+    "explorer.openEditors.visible": 0,
+    "explorer.confirmPasteNative": false,
+    "explorer.confirmDelete": false,
+
+    // Configs editor
+    "editor.fontSize": 14,
+    "files.autoSave": "onWindowChange",
+    "debug.onTaskErrors": "debugAnyway",
+
+    // CMake
+    "cmake.useCMakePresets": "always",
     "cmake.showOptionsMovedNotification": false,
+
+    // Colores personalizados
     "workbench.colorCustomizations": {
         "[Palenight Theme]": {
             "editor.background": "#1e1e1e",
@@ -54,16 +64,34 @@
             }
         ]
     },
-    "python.dataScience.jupyterServerURI": "local",
-    "python.dataScience.runStartupCommands": [
-        "import matplotlib.pyplot as plt",
-        "plt.style.use('seaborn-darkgrid')"
-    ],
+
+    // Asociaciones de archivos
     "workbench.editorAssociations": {
         "*.png": "imagePreview.previewEditor",
         "*.jpg": "imagePreview.previewEditor",
         "*.jpeg": "imagePreview.previewEditor"
     },
+
+    // Python / Jupyter
+    "python.dataScience.jupyterServerURI": "local",
+    "python.dataScience.runStartupCommands": [
+        "import matplotlib.pyplot as plt",
+        "plt.style.use('seaborn-darkgrid')"
+    ],
+
+    // Preferencias varias
     "workbench.preferredHighContrastColorTheme": "Kimbie Dark",
-    "workbench.activityBar.location": "hidden"
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": true
+    },
+    
+    // Copilot
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
 }
